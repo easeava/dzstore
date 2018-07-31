@@ -73,7 +73,7 @@ func GetPageDatas(num int, wait *sync.WaitGroup) {
 		tag := s.Find(".tag-addr .tag").First().Text()
 		point := s.Find(".tag-addr .tag").Last().Text()
 		addr := s.Find(".addr").Text()
-		fmt.Printf(fmt.Sprintf("第一%d页: title: %s 菜系: %s 地址: %s - %s\n", num, title, tag, point, addr))
+		fmt.Printf(fmt.Sprintf("%d: 店铺名称: %s 菜系: %s 地址: %s - %s\n", num, title, tag, point, addr))
 		//c <- fmt.Sprintf("第一%d页: title: %s", num, title)
 	})
 
